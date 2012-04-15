@@ -1,41 +1,21 @@
 // Mixins.less
 // 
-// Reusable css snippets and less mixins
+// Less mixins
 // =======================================
 
-// Font Stacks
-#font {
-	.shorthand(@weight: normal, @size: 14px, @lineHeight: 20px) {
-		font-size: @size;
-		font-weight: @weight;
-		line-height: @lineHeight;
-	}
-	.sans-serif(@weight: normal, @size: 14px, @lineHeight: 20px) {
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: @size;
-		font-weight: @weight;
-		line-height: @lineHeight;
-	}
-	.serif(@weight: normal, @size: 14px, @lineHeight: 20px) {
-		font-family: "Georgia", Times New Roman, Times, serif;
-		font-size: @size;
-		font-weight: @weight;
-		line-height: @lineHeight;
-	}
-	.monospace(@weight: normal, @size: 12px, @lineHeight: 20px) {
-		font-family: "Monaco", Courier New, monospace;
-		font-size: @size;
-		font-weight: @weight;
-		line-height: @lineHeight;
-	}
-}
-
 // Rem units for fonts
+//.font-size(@font-size: 16){
+//	@rem: (@font-size / 10);
+//	font-size: @font-size * 1px;
+//	font-size: ~"@{rem}rem";
+//}
+// Body 100%
 .font-size(@font-size: 16){
 	@rem: (@font-size / 10);
 	font-size: @font-size * 1px;
 	font-size: ~"@{rem}rem";
 }
+
 
 // Input placeholder text
 .placeholder(@color: @grayLight) {
