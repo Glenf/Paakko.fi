@@ -54,13 +54,13 @@ audio:not([controls]) {
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 html {
-  font-size: 62.5%;
+  font-size: 100%;
   /* 1 */
 
-  -webkit-text-size-adjust: 62.5%;
+  -webkit-text-size-adjust: 100%;
   /* 2 */
 
-  -ms-text-size-adjust: 62.5%;
+  -ms-text-size-adjust: 100%;
   /* 2 */
 
 }
@@ -481,10 +481,96 @@ table {
   -mox-box-sizing: border-box;
   box-sizing: border-box;
 }
+.list-item {
+  border: 1px solid #333;
+  margin-top: -1px;
+  position: relative;
+  background-color: #fff;
+  padding-left: 88px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background-image: -khtml-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+}
+.list-item header {
+  /*		padding:.5em .5em .5em 5em;*/
+
+  /*		background-color:#ddd;*/
+
+}
+.list-item header h2 {
+  padding: 0;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+.list-item time {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  z-index: 20;
+}
+.list-item .readmore {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  -ms-transition: background 0.2s ease-in-out;
+  -o-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+.list-item .readmore:hover {
+  background-color: rgba(113, 138, 84, 0.2);
+}
+.style-cal {
+  width: 4.5em;
+  background-color: #fff;
+  border: 1px solid #000;
+  text-align: center;
+  color: #fff;
+  line-height: 1;
+}
+.style-cal .day {
+  font-size: 60px;
+  font-size: 3.75rem;
+  font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #772E6D;
+}
+.style-cal .month,
+.style-cal .year {
+  background-color: #772E6D;
+  color: #fff;
+  display: block;
+  padding: 0;
+  display: block;
+}
+.style-cal .month {
+  font-size: 12px;
+  font-size: 0.75rem;
+  padding: .3em 0 .1em;
+}
 body {
   font-family: 'Vollkorn', 'Times New Roman', Times serif;
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 h1,
 h2,
@@ -500,11 +586,69 @@ h6,
 .h6 {
   font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
   font-weight: normal;
+  text-rendering: optimizeLegibility;
+  padding-top: 0;
+  margin-top: 0;
+  /*	color:#772E6D;*/
+
 }
+/*
+h1, .h1{
+	.font-size(59);
+}
+
+h2, .h2{
+	.font-size(41);	
+}
+
+h3, .h3{
+	.font-size(36);
+}
+
+h4, .h4{
+	.font-size(25)
+}
+
+h5, .h5{
+	.font-size(22);
+}
+
+h6, .h6{
+	.font-size(16);
+}
+*/
 h1,
 .h1 {
   font-size: 30px;
-  font-size: 3rem;
+  font-size: 1.875rem;
+}
+h2,
+.h2 {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+h3,
+.h3 {
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+h4,
+.h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+h5,
+.h5 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+h6,
+.h6 {
+  font-size: 16px;
+  font-size: 1rem;
+}
+p {
+  margin-top: 0;
 }
 @media print {
   * {

@@ -2,19 +2,83 @@
 @vollkorn:'Vollkorn', 'Times New Roman', Times serif;
 body{
 	font-family:@vollkorn;
-	.font-size(14);
+	.font-size(16);
+	line-height:1.5;
 }
+
+//  Pixels
+//  1,063.974
+//  751.538
+//  657.586
+//  464.486
+//  406.419
+//  287.074
+//  251.186
+//  177.425
+//  155.245
+//  109.657	gigantic
+//  95.949	massive
+//  67.773	huge
+//  59.301	h1
+//  41.887	h2
+//  36.651	h3
+//  25.888	h4
+//  22.652	h5
+//* 16.000	h6
+//* 14.000
+//  9.889
+//  8.653
+//  6.112
+//  5.348
+//  3.778
+//  3.305
+//  2.335
+//  2.043
+//  1.443
+//  1.263
 
 h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6{
 	font-family:@pt;
 	font-weight:normal;
+	text-rendering: optimizeLegibility;
+	
+	padding-top:0;
+	margin-top:0;
+	
+/*	color:#772E6D;*/
 }
-
+/*
 h1, .h1{
-	.font-size(30);
+	.font-size(59);
 }
 
 h2, .h2{
-	
+	.font-size(41);	
+}
+
+h3, .h3{
+	.font-size(36);
+}
+
+h4, .h4{
+	.font-size(25)
+}
+
+h5, .h5{
+	.font-size(22);
+}
+
+h6, .h6{
+	.font-size(16);
+}
+*/
+h1,.h1{.font-size(30);}
+h2,.h2{.font-size(28);}
+h3,.h3{.font-size(26);}
+h4,.h4{.font-size(24)}
+h5,.h5{.font-size(20);}
+h6,.h6{.font-size(16);}
+p{
+	margin-top:0;
 }
