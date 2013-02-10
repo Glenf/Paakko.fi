@@ -21,3 +21,11 @@
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
+
+.wrapper {
+	max-width : 1200px;
+	margin : 0 auto;
+
+	padding-left : $base-spacing-unit;
+	padding-right : $base-spacing-unit;
+}
